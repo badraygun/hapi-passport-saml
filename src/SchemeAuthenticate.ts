@@ -27,7 +27,6 @@ export const SchemeAuthenticate = (
     session = {};
     session.redirectTo = request.path;
 
-    h.state(settings.cookie, session);
     return h.redirect(loginUrl).takeover();
   }
 
